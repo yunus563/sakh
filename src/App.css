@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family:Roboto;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+/* For Home Page  */
+.list-group-item{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.list-group-item a{
+  text-decoration: none;
+}
