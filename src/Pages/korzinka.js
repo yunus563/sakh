@@ -13,6 +13,7 @@ import LikeActive from '../Images/VectorLike_red_Product.svg'
 
 
 const Korzinka = () => {
+
   
   return (
     <>
