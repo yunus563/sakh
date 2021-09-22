@@ -1,5 +1,8 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import '../styles/components.css';
+import {Link} from 'react-router-dom';
+
+
 import Logo from '../Images/image 1LogoMenuBar.png';
 import Search from '../Images/VectorMenu_Search.svg';
 import User from '../Images/VectorMenu_User.svg';
@@ -10,9 +13,8 @@ import search from '../Images/VectorSearch_Menu_Left.svg'
 
 
 
-function mMenuBar() {
+function MenuBar() {
   
-
   return (
     <>
     {window.location.pathname !== '/auksion' ? (
@@ -41,11 +43,11 @@ function mMenuBar() {
           </div>
         </div>
 
-
-
         <div className="menu_right">
           <span>RУ <div style={{marginLeft:'5px'}}><img src={Bottom} alt="icon" /></div></span>
+          <Link to="/korzinka">
           <span><img src={Love} alt="search" /></span>
+          </Link>
           <span><img src={Login} alt="user" /></span>
         </div>
       </div>
@@ -55,4 +57,4 @@ function mMenuBar() {
   );
 }
 
-export default mMenuBar;
+export default MenuBar;

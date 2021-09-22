@@ -8,6 +8,8 @@ import MenuBar from './Components/MenuBar'
 import Home from './Pages/Home';
 import Korzinka from './Pages/korzinka';
 import Info from './Pages/info';
+import Video from './Pages/video';
+import Yangiliklar from './Pages/yangiliklar';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route path="/auksion" component={Auksion}/>
           <Route path="/korzinka" component={Korzinka}/>
+          <Route path="/yangiliklar" component={Yangiliklar}/>
+          <Route path="/video" component={Video}/>
           <Route path="/info/:1" component={Info}/>
         </div>
       </Router>
