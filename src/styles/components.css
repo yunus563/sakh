@@ -16,17 +16,18 @@
   margin-left: 30px;
 }
 .top_menu {
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 .navbar .top_menus {
   display: flex;
+  width: 100%;justify-content: space-between;
 }
 .navbar .top_menus .menu_acordion .menu_right_center {
   background-color: #0073ff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 32px;
+  margin-left: 14px;
   padding: 2px;
   border-radius: 0px 8px 8px 0px;
   border-radius: 8px;
@@ -34,12 +35,13 @@
 }
 .navbar .top_menus .menu_acordion {
   display: flex;
+  align-items: center;
 }
 
 .navbar .top_menus .menu_acordion button {
   background: #eaeaea;
   border-radius: 4px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -50,7 +52,7 @@
   border-radius: 8px;
 }
 .navbar .top_menus .menu_acordion input {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

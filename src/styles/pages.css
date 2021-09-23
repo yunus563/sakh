@@ -30,14 +30,14 @@ p {
   margin-bottom: 130px;
 }
 .korzinka .products span {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
 }
 .korzinka .products p {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -55,7 +55,7 @@ p {
   border-radius: 4px;
   padding: 12px 32px;
   color: white;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -315,26 +315,149 @@ p {
 .new_page .New_end_botom {
   display: flex;
 }
-.new_page .col-lg-3{
+.new_page .col-lg-3 {
   margin-bottom: 20px;
 }
-.new_page .New_end_top .child span{
+.new_page .New_end_top .child span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #8F8F8F;
+  color: #8f8f8f;
   margin: 0 6px 0px 0;
 }
-.new_page .New_end_top .new-top1{
+.new_page .New_end_top .new-top1 {
   display: flex;
   flex-direction: column;
   padding: 2px 20px;
 }
 
-.new_page .col-lg-7{
+.new_page .col-lg-7 {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
 }
+
+/* Auksion */
+
+.auksion .products {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 12px 12px 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px 4px rgba(51, 51, 51, 0.06);
+  margin-bottom: 24px;
+}
+
+.auksion .products div img {
+  width: 100%;
+  border-radius: 4px;
+}
+.auksion .products .f1 span {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #121212;
+}
+.auksion .products .f1 {
+  margin: 12px 0 6px;
+}
+.auksion .products div p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #333333;
+}
+
+.auksion .products .for_likes {
+  position: relative;
+}
+.auksion .products .for_likes .abs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 17px 16px;
+  cursor: pointer;
+}
+
+.auk_bot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0 200px;
+}
+
+.auksion .auk_bot button {
+  background: #0073ff;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+}
+
+/* katalog */
+
+.katalog{
+  margin-left: 80px;
+}
+.katalog .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.katalog .accordion .accordion-button::after {
+  display: none;
+}
+
+.katalog .accordion .accordion-item .accordion-button {
+  background: #0073ff;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+.katalog .accordion .accordion-item .accordion-button img{
+  margin-right: 6px;
+}
+
+
+.katalog_drop .accordion-collapse .col-lg-3{
+ background: #F5F5F6;
+ padding-top: 10px;
+ border-radius: 8px;
+ margin-bottom: 16px;
+}
+.katalog_drop .accordion-collapse a{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+.katalog_drop .accordion-collapse a:hover{
+  font-weight: 500;
+}
+.katalog_drop .accordion-collapse .accordion-body{
+  padding: 10px 0;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding-left: 50px;
+}
+.katalog_drop .accordion-collapse .accordion-body div{
+  margin-right: 10px;
+}
+.katalog_drop .accordion-collapse .accordion-body:hover{
+  background: #FFFFFF;
+  border-right: 3px solid #0073FF; ;
+} 
