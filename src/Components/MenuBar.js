@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/components.css';
 import MenuDrop from './MenuDrop'
-
+import {Link} from 'react-router-dom'
 
 import Logo from '../Images/image 1LogoMenuBar.png';
 import Search from '../Images/VectorMenu_Search.svg';
@@ -22,7 +22,7 @@ function MenuBar() {
         <div className="menu_right">
           <span>RУ <div style={{marginLeft:'5px'}}><img src={Bottom} alt="icon" /></div></span>
           <span><img src={Search} alt="search" /></span>
-          <span><img src={User} alt="user" /></span>
+          <Link to="/register"><span><img src={User} alt="user" /></span></Link>
         </div>
       </div>
     </nav>

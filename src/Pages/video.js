@@ -1,5 +1,11 @@
 import React from 'react'
 import '../styles/pages.css'
+
+import { Link } from 'react-router-dom'
+
+
+
+
 import video from '../Images/kulgu 1Video_Img.png'
 import leftPg from '../Images/VectorLeft_Pagination.svg'
 import rightPg from '../Images/VectorRight_Pagination.svg'
@@ -9,72 +15,18 @@ import rightPg from '../Images/VectorRight_Pagination.svg'
 const Video = () => {
   return (
     <>
-      <div className="row">
+      <div className="row video_page">
         <div className="video_top">
           <span>Video</span> <input type="text" placeholder="Search" />
         </div>
-        <div className="col-lg-3">
-        <div className="video_center">
+       <div className="col-lg-3">
+       <Link to={"/videoinfo/"+1}>
+          <div className="video_center">
             <div><div><img src={video} alt="video" /></div></div>
             <div><p>30 апр. 2021 г.</p></div>
             <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
           </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
-        </div>
-        <div className="col-lg-3">
-        <div className="video_center">
-            <div><div><img src={video} alt="video" /></div></div>
-            <div><p>30 апр. 2021 г.</p></div>
-            <div><h4>MILLION JAMOASI KONSERT DASTURI 2019</h4></div>
-          </div>
+       </Link>
         </div>
         <div className="video_pagination">
           <nav aria-label="Page navigation example">
